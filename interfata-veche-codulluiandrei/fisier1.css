@@ -1,0 +1,37 @@
+.buttons_logocontainer {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 20px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    transition: 0.7s;
+} 
+.buttons_gridcontainer {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20%;
+} 
+/* pentru a seta logo-ul la full width */
+.buttons_item:nth-child(1) {
+    grid-row: 1 span 1/2;
+} 
+.buttons_item {
+    width: auto;
+    height: 7rem;
+    overflow: hidden;
+    border: 1px solid #b678ff;
+    border-radius: 2px 2px;
+    background: url("https://codulluiandrei.ro/imagini/textura-buton-acasa.png");
+    padding: 10px;
+    color: #b678ff;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    font-size: 1rem;
+    transition: 0.7s;
+    letter-spacing: 0.1rem;
+}
