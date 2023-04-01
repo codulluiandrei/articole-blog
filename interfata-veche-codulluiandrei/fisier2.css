@@ -1,0 +1,8 @@
+.buttons_logocontainer span { color: #b678ff; }
+.buttons_item:hover {
+    font-size: 1.3rem;
+    background: url("https://codulluiandrei.ro/imagini/textura-buton-acasa-hover.png");
+}
+.buttons_item_changed {
+    border-radius: 2px 2px;
+} 
