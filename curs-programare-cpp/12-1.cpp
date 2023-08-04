@@ -10,7 +10,7 @@ string conversie_baza(int nr, int baza) {
     }
 
     while (nr != 0) {
-        int ramas = nr % baza; // Schimbam aici din 'rezultat' in 'nr'
+        int ramas = nr % baza;
         char cifra;
 
         // Converteste cifra ramasa in caracter
@@ -39,7 +39,7 @@ int main() {
         return 1;
     }
 
-    string rezultat = conversie_baza(nr, baza); // Corectam aici numele functiei
+    string rezultat = conversie_baza(nr, baza);
     cout << rezultat;
 
     return 0;
