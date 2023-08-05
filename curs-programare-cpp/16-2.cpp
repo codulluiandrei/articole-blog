@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int v[1001], n = 0, val, poz;
+    int v[1001], n = 0, poz;
     cin >> n;
     for (int i = 1; i <= n; i++)
         cin >> v[i];
-    cin >> val >> poz;
+    cin >> poz;
 
-    if (n < 1001 && poz >= 0 && poz <= n) {
-        for (int i = n; i >= poz; i--)
-            v[i + 1] = v[i];
-        v[poz] = val;
-        n++;
+    if (poz >= 1 && poz <= n) {
+        for (int i = poz; i < n; i++)
+            v[i] = v[i + 1];
+        n--;
     }
     
     for (int i = 1; i <= n; i++)
